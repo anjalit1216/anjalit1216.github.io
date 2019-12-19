@@ -37,19 +37,19 @@ body, html {
 
 /* First image (Background for Name) */
 .name-background {
-  background-image: url('../1.png');
+  background-image: url('1.png');
   min-height: 100%; /* cover the whole screen */
 }
 
 /* Second image (Personal Projects Background) */
 .projects-background {
-  background-image: url('../2.png');
+  background-image: url('2.png');
   min-height: 400px;
 }
 
 /* Third image (Contact Info Background) */
 .contact-background {
-  background-image: url('../3.png');
+  background-image: url('3.png');
   min-height: 400px;
 }
 
