@@ -1,1 +1,174 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<title>Anjali Thakkar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/2ebe120c80.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="collapsible.css">
+
+<style>
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top-align">
+  <div class="navbar" id="myNavbar">
+    <a href="#home" class="navbar-item button"><i class="fa fa-home" aria-hidden="true"></i>  HOME</a>
+    <a href="#about" class="navbar-item button"><i class="fa fa-user"></i>  ABOUT</a>
+    <a href="#projects" class="navbar-item button"><i class="fa fa-th"></i>  PROJECTS</a>
+    <a href="#contact" class="navbar-item button"><i class="fa fa-envelope"></i>  CONTACT</a>
+    <a href="../Resume.pdf" class="navbar-item button"><i class="fas fa-file-alt"></i>  RESUME</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="name-background display-container image-opacity" id="home">
+  <div class="center-image-header" style="white-space:nowrap;">
+    <span class="center-text padding-large black xl-font-size wide-letter-spacing">ANJALI THAKKAR</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="section container padding-64" id="about">
+  <h3 class="center-text">ABOUT ME</h3>
+  <p class="center-text"><em>I love computer science</em></p>
+  <p>Write a bio here...</p>
+  <div class="row">
+  </div>
+  <h3 class="center-text">MY SKILLS:</h3>
+  <p><span class="wide-letter-spacing"><i class="fab fa-java"></i></span>Java</p>
+  <div class="light-gray">
+    <div class="container padding-small dark-gray center-text" style="width:90%">.</div>
+  </div>
+  <p><span class="wide-letter-spacing"><i class="fab fa-python"></i></span>Python</p>
+  <div class="light-gray">
+    <div class="container padding-small dark-gray center-text" style="width:15%">.</div>
+  </div>
+  <p><span class="wide-letter-spacing"><i class="fab fa-swift"></i></span>Swift</p>
+  <div class="light-gray">
+    <div class="container padding-small dark-gray center-text" style="width:75%">.</div>
+  </div>
+  <p><span class="wide-letter-spacing"><i class="fas fa-copyright"></i></span>C++</p>
+  <div class="light-gray">
+    <div class="container padding-small dark-gray center-text" style="width:90%">.</div>
+  </div>
+  <p><span class="wide-letter-spacing"><i class="fas fa-fish"></i></span>SQL</p>
+  <div class="light-gray">
+    <div class="container padding-small dark-gray center-text" style="width:90%">.</div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Projects Text -->
+<div class="projects-background display-container image-opacity" id="projects">
+  <div class="center-image-header">
+    <span class="xxl-font-size white-text wide-letter-spacing">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Projects Section) -->
+<div class="section container padding-64">
+
+<!-- Collapsibles -->
+  <button type="button" class="collapsible light-gray">Jenkins</button>
+  <div class="content">
+    <p>Description</p>
+  </div>
+
+  <button type="button" class="collapsible light-gray">News Website</button>
+  <div class="content">
+    <p>Description</p>
+  </div>
+
+  <button type="button" class="collapsible light-gray">Stay Informed Bot</button>
+  <div class="content">
+    <p>Description</p>
+  </div>
+
+  <button type="button" class="collapsible light-gray">Spotify Recs Playlist</button>
+  <div class="content">
+    <p>Description</p>
+  </div>
+
+  <button type="button" class="collapsible light-gray">WIT Social Media</button>
+  <div class="content">
+    <p>Description</p>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</div>
+
+<!-- Third Parallax Image with Contact Text -->
+<div class="contact-background display-container image-opacity" id="contact">
+  <div class="center-image-header">
+     <span class="xxl-font-size white-text wide-letter-spacing">CONTACT ME</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="section container">
+    <div class="contact-padding">
+      <div class="large-font-size">
+        <i class="fa fa-map-marker fa-fw hover-black-text xl-font-size right-margin"></i> Boston, MA<br>
+        <i class="fa fa-phone fa-fw hover-black-text xl-font-size right-margin"></i> Phone: (845) 499-4002<br>
+        <i class="fa fa-envelope fa-fw hover-black-text xl-font-size right-margin"></i> Email: thakkar.anj@northeastern.edu<br>
+      </div>
+      <p>Reach out to me here!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="row-padding" style="margin:0 -16px 8px -16px">
+          <div class="half-width">
+            <input class="text-field border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="half-width">
+            <input class="text-field border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="text-field border" type="text" placeholder="Message" required name="Message">
+        <button class="button black float-right section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="center-text black padding-64">
+  <div class="xl-font-size section">
+    <i class="fab fa-linkedin-in hover-opacity"></i>
+    <i class="fab fa-github hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "navbar" + " drop-shadow" + " animate-navbar" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" drop-shadow animate-navbar white", "");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+html {
+	box-sizing:border-box
+} *,*:before,*:after {
+	box-sizing:inherit
+}
+
+html {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%
+} body {
+	margin:0
+}
+
+button,input{
+	font:inherit;
+	margin:0 2px;
+	padding:.35em .625em .75em
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Lato", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.name-background, .projects-background, .contact-background {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Background for Name) */
+.name-background {
+  background-image: url('../1.png');
+  min-height: 100%; /* cover the whole screen */
+}
+
+/* Second image (Personal Projects Background) */
+.projects-background {
+  background-image: url('../2.png');
+  min-height: 400px;
+}
+
+/* Third image (Contact Info Background) */
+.contact-background {
+  background-image: url('../3.png');
+  min-height: 400px;
+}
+
+.wide-letter-spacing {
+	letter-spacing: 10px;
+}
+
+.hover-opacity {
+	cursor: pointer;
+}
+
+.button {
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
+}
+
+.display-container {
+	position:relative
+}
+
+.text-field {
+	padding:8px;
+	display:block;
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:100%
+}
+
+.navbar {
+	width:100%;
+	overflow:hidden;
+	background-color: #ffffff;
+	opacity: .75;
+}
+
+.center-text .navbar {
+	display:inline-block;
+	width:auto
+}
+
+.navbar .navbar-item {
+	padding:8px 16px;
+	float:left;
+	width:auto;
+	border:none;
+	display:block;
+	outline:0
+}
+
+.navbar .button {
+	white-space:normal
+}
+
+.navbar-block .navbar-item {
+	width:100%;
+	display:block;
+	padding:8px 16px;
+	text-align:left;
+	border:none;
+	white-space:normal;
+	float:none;
+	outline:0;
+	background-color:#ffffff;
+	opacity:.85
+}
+
+.navbar-block.center-text .navbar-item {
+	text-align:center
+}
+
+.container:after,.container:before,.row:after,.row:before,.row-padding:after,.row-padding:before,
+
+.navbar:before,.navbar:after {
+	content:"";
+	display:table;
+	clear:both
+}
+
+.half-width {
+	float:left;
+	width:100%
+}
+
+@media (min-width:601px) {
+	.half-width {
+		width:49.99999%
+	}
+}
+
+@media (min-width:993px) {
+	.section{
+		margin-left:auto;
+		margin-right:auto;
+		max-width:980px
+	}
+}
+
+@media (max-width:600px) {
+
+	.button {width:100%}
+}
+
+/* Positions Nav Bar at the top of the page */
+
+.top-align {
+	position:fixed;
+	width:100%;
+	z-index:1; /* Determines the stacking order of elements -- navbar will always be on top */
+	top:0;
+}
+
+.center-image-header {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%)
+}
+
+.row-padding,.half-width {
+	padding:0 8px
+}
+
+.container {
+	padding:0.01em 16px
+}
+
+.contact-padding {
+	margin-top:16px;
+	margin-bottom:16px
+}
+
+.drop-shadow {
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16)
+}
+
+.animate-navbar {
+	position:relative;animation:animatetop 0.4s
+} @keyframes animatetop {
+	from {
+		top:-300px;
+		opacity:0
+	} to {
+		top:0;
+		opacity:1
+	}
+}
+
+.hover-opacity:hover {
+	opacity:0.60
+}
+
+.image-opacity {
+	opacity:0.75
+}
+
+.large-font-size {
+	font-size:18px
+}
+
+.xl-font-size {
+	font-size:24px
+}
+
+.xxl-font-size {
+	font-size:36px
+}
+
+.center-text {
+	text-align:center
+}
+
+.border {
+	border:1px solid #ccc
+}
+
+.section {
+	margin-top:16px;
+	margin-bottom:16px
+}
+
+.right-margin {
+	margin-right:16px
+}
+
+.padding-small {
+	padding:4px 8px
+}
+
+.padding-large {
+	padding:12px 24px
+}
+
+.padding-64 {
+	padding-top:64px;
+	padding-bottom:64px
+}
+
+.float-right {
+	float:right
+}
+
+.button:hover {
+	color:#000;
+	background-color:#ccc
+}
+
+/* Colors */
+.white {
+	color:#000;
+	background-color:#fff
+}
+.black {
+	color:#fff;
+	background-color:#000
+}
+.light-gray {
+	color:#000;
+	background-color:#f1f1f1
+}
+.dark-gray{
+	color:#fff;
+	background-color:#616161
+}
+.white-text {
+	color:#fff
+}
+.hover-black-text:hover {
+	color:#000
+}
