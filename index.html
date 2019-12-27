@@ -132,7 +132,7 @@
         <i class="fa fa-envelope fa-fw hover-black-text xl-font-size right-margin"></i> Email: thakkar.anj@northeastern.edu<br>
       </div>
       <p>Reach out to me here!</p>
-      <form action="/action_page.php" target="_blank">
+      <form method="post" name="email form" action="email.php">
         <div class="row-padding" style="margin:0 -16px 8px -16px">
           <div class="half-width">
             <input class="text-field border" type="text" placeholder="Name" required name="Name">
@@ -142,9 +142,7 @@
           </div>
         </div>
         <input class="text-field border" type="text" placeholder="Message" required name="Message">
-        <button class="button black float-right section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+        <input class="button black float-right section" type="submit" value="SEND MESSAGE">
       </form>
     </div>
 </div>
