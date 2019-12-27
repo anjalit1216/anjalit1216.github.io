@@ -2,19 +2,19 @@
 
 /* This code was made using the tutorial on this website: http://form.guide/email-form/php-form-to-email.html */
 
-/*if(!isset($_POST['submit']))
+if(!isset($_POST['submit']))
 {
 	echo "error; you need to submit the form!";
-}*/
+}
 $name = $_POST['Name'];
 $sender_email = $_POST['Email'];
 $message = $_POST['Message'];
 
-/*if(IsInjected($visitor_email))
+if(IsInjected($visitor_email))
 {
     echo "Bad email value!";
     exit;
-}*/
+}
 
 $email_from = 'thakkar.anj@husky.neu.edu';
 $email_subject = "Someone contacted me through my website!";
@@ -27,7 +27,7 @@ $headers .= "Reply-To: $sender_email \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-/*function IsInjected($str)
+function IsInjected($str)
 {
   $injections = array('(\n+)',
               '(\r+)',
@@ -47,6 +47,6 @@ mail($to,$email_subject,$email_body,$headers);
     {
     return false;
   }
-}*/
+}
 
 ?> 
