@@ -42,23 +42,23 @@
   <h3 class="center-text">MY SKILLS:</h3>
   <p><span class="wide-letter-spacing"><i class="fab fa-java"></i></span>Java</p>
   <div class="light-gray">
-    <div class="container padding-small dark-gray center-text" style="width:90%">.</div>
-  </div>
-  <p><span class="wide-letter-spacing"><i class="fab fa-python"></i></span>Python</p>
-  <div class="light-gray">
-    <div class="container padding-small dark-gray center-text" style="width:15%">.</div>
+    <div class="container padding-small dark-gray center-text " style="width:95%; height: 35px"></div>
   </div>
   <p><span class="wide-letter-spacing"><i class="fab fa-swift"></i></span>Swift</p>
   <div class="light-gray">
-    <div class="container padding-small dark-gray center-text" style="width:75%">.</div>
+    <div class="container padding-small dark-gray center-text" style="width:80%; height: 35px"></div>
   </div>
-  <p><span class="wide-letter-spacing"><i class="fas fa-copyright"></i></span>C++</p>
+  <p><span class="wide-letter-spacing"><i class="fab fa-python"></i></span>Python</p>
   <div class="light-gray">
-    <div class="container padding-small dark-gray center-text" style="width:90%">.</div>
+    <div class="container padding-small dark-gray center-text" style="width:75%; height: 35px"></div>
+  </div>
+  <p><span class="wide-letter-spacing"><i class="fas fa-code"></i></span>HTML / CSS </p>
+  <div class="light-gray">
+    <div class="container padding-small dark-gray center-text" style="width:69%; height: 35px"></div>
   </div>
   <p><span class="wide-letter-spacing"><i class="fas fa-fish"></i></span>SQL</p>
   <div class="light-gray">
-    <div class="container padding-small dark-gray center-text" style="width:90%">.</div>
+    <div class="container padding-small dark-gray center-text" style="width:55%; height: 35px"></div>
   </div>
 </div>
 
@@ -75,27 +75,42 @@
 <!-- Collapsibles -->
   <button type="button" class="collapsible light-gray">Jenkins</button>
   <div class="content-collapsible">
-    <p>Description</p>
+    <p>While working at The Learning Corp, I worked with another co-op to automate the process of creating builds of the iOS and Android apps by implementing a continuous integration and continuous delivery system. Once a pull request on GitHub is merged into the master branch of the code, the pipeline automatically builds, tests and deploys the app to firebase, a platform through which other employees can download and test the app with their own devices. It also generates reports on the style and quality of the code using swiftlint and sonarqube, and notifies developers via Slack when new builds are created. The pipleines which run through these steps was created using Groovy.</p>
+    <p>Ultimately, this project was able to create builds without any need for developers to intervene -- a process which used to take them about two hours per build -- leaving them more time to create features. The ability to create builds every time new code was implemented in the code base, as opposed to every three days or so, also helped to make the QA process more efficient and accurate. </p>
   </div>
 
-  <button type="button" class="collapsible light-gray">News Website</button>
+  <button type="button" class="collapsible light-gray">Stay Informed Bot!</button>
   <div class="content-collapsible">
-    <p>Description</p>
+    <p>The idea for this project was born while serving on the Student Advisory Committee for my local senator in high school…</p> 
+    <p>A friend and I made use of Node.js and Google’s Civic API to create a Twitter Bot that retweets articles about your local representatives given your zip code or address! We built this project with the hopes that it could help people stay more informed with what is going on in their area and engage more closely with their local representatives.</p>
   </div>
 
-  <button type="button" class="collapsible light-gray">Stay Informed Bot</button>
+  <button type="button" class="collapsible light-gray">Funny or Not?</button>
   <div class="content-collapsible">
-    <p>Description</p>
+    <p>I collaborated with another student to develop a machine learning model that could take a short phrase and determine whether or not it was funny. Working with a dataset from Reddit containing thousands of jokes and a rating on how funny they were, we used Python’s Natural Language Toolkit to extract “interesting” words, which became the features of our machine learning model. We then implemented the Naive Bayes, Decision Tree and Random Forest algorithms and compared them to see which to see which was most suited to our problem.</p>
   </div>
 
-  <button type="button" class="collapsible light-gray">Spotify Recs Playlist</button>
+  <button type="button" class="collapsible light-gray">Networks</button>
   <div class="content-collapsible">
-    <p>Description</p>
+    <p>For my Computer Communications and Networks class, I implemented and evaluated three different protocols (Stop-and-Wait, Go Back N and Selective Repeat) for achieving reliable data transfer over the UDP transport protocol using Java. I created a sender and receiver and provided the functionality to transfer a large file (specified by the user) between them over a link as a sequence of smaller messages. </p>
+    <p>Because of the nature of UDP, the sender needed to add a header to each packet it sent, indicating the order of the packets. The receiver then used this information to piece the file back together, and to send an acknowledgment to the sender validating that each packet was received.</p>
   </div>
 
-  <button type="button" class="collapsible light-gray">WIT Social Media</button>
+  <button type="button" class="collapsible light-gray">Excellence Animator</button>
   <div class="content-collapsible">
-    <p>Description</p>
+    <p>For this project, I implemented the Model-View-Controller design pattern to create animations with multiple views, including a description of the animation printed to a text file, an SVG output which can be viewed in a browser, and an interactive animation which is rendered via Java Swing. I later added functionality to play and pause the animation, reverse it, scrub through it, change the frames per second, and even add your own shapes and see them interact with the rest of the animation!</p>
+  </div>
+
+  <button type="button" class="collapsible light-gray">ZodiHacks</button>
+  <div class="content-collapsible">
+    <p>This was my very first personal project, created at the Hack BeanPot hackathon along with five other girls during my first year of college! We created a website that predicts a user’s zodiac sign and gives them their horoscope based on their input about their day. To accomplish this, we used Indico’s text analysis API for personas to determine a user’s most prominent personality traits, and mapped them to the characteristics traditionally associated with each zodiac. We built our website using HTML, CSS and Flask.</p>
+    <p>Although the scale of this project is not huge, it taught me a lot about teamwork -- it was my first time collaborating with a group of students to create a project outside of class. It also helped me become more confident in my abilities to pick up new languages and learn new tools when needed for projects, and made me realize that I didn’t have to limit the scope of my projects to things I am familiar and comfortable with.</p>
+  </div>
+
+  <button type="button" class="collapsible light-gray">Current & Future Projects :)</button>
+  <div class="content-collapsible">
+    <p><em>WIT Social Media - </em>In high school I was the only female in my computer science class of 30 students. At my university, less than 25% of enrolled computer science majors are female, and that number is sadly one of the highest in the nation. I spent much of my last co-op being the only woman on the entire engineering team. Although I am so passionate about computer science, it can sometimes become exhausting feeling as if I constantly have to prove myself and represent my entire gender. Thankfully I have found a close group of female friends pursuing technology that I can relate to and rely on, and their support has been invaluable to my growth as a software engineer. That is why a friend and I decided to try and create a social media website, specifically for women and non-binary individuals, to be able to expand their networks and have a supportive environment where they can interact with other female computer scientists, outside of the male dominated communities that we usually find ourselves in. This project is in the early stages, but we are currently learning Ruby on Rails, which we hope to use to code our website!</p>
+    <p><em>News Website - </em>For my next project I would like to use the New API to make a website that compiles articles from the news sources of your choice and puts it into one place. Based on your selection of news providers, it will also give users a rating of how biased their news feed is, so they can consume information more consciously.</p>
   </div>
 
   <script>
@@ -131,7 +146,7 @@
         <i class="fa fa-phone fa-fw hover-black-text xl-font-size right-margin"></i> Phone: (845) 499-4002<br>
         <i class="fa fa-envelope fa-fw hover-black-text xl-font-size right-margin"></i> Email: thakkar.anj@northeastern.edu<br>
       </div>
-      <p>Reach out to me here!</p>
+      <!--<p>Reach out to me here!</p>
       <form method="post" name="email form" action="email.php">
         <div class="row-padding" style="margin:0 -16px 8px -16px">
           <div class="half-width">
@@ -143,7 +158,7 @@
         </div>
         <input class="text-field border" type="text" placeholder="Message" required name="Message">
         <input class="button black float-right section" type="submit" value="SEND MESSAGE">
-      </form>
+      </form>-->
     </div>
 </div>
 
