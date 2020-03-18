@@ -177,6 +177,13 @@ body, html {
 	transform:translate(-50%,-50%)
 }
 
+.profile-image {
+	float:left;
+	padding:0 15px 0 0;
+	height:281px;
+	width:207px;
+}
+
 .row-padding,.half-width {
 	padding:0 8px
 }
@@ -263,6 +270,15 @@ body, html {
 .button:hover {
 	color:#000;
 	background-color:#ccc
+}
+
+a:link {
+  color: #f1f1f1;
+}
+
+/* visited link */
+a:visited {
+  color: #616161;
 }
 
 /* Colors */
